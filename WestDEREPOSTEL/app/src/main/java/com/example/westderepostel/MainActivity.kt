@@ -1,5 +1,6 @@
 package com.example.westderepostel
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -17,6 +18,11 @@ class MainActivity : AppCompatActivity() {
         toggle.isDrawerIndicatorEnabled = true
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
+
+
+        contentMainServicesBtn.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
 
     }
 
