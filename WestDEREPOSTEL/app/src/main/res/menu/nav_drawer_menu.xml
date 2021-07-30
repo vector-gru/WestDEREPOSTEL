@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_services"
+                android:icon="@drawable/ic_baseline_services_24"
+                android:title="@string/services" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_operator_login"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="@string/operator_login" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_notification"
+                android:icon="@drawable/ic_baseline_notifications_active_24"
+                android:title="@string/notifications" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_guide"
+                android:icon="@drawable/ic_baseline_directions_24"
+                android:title="@string/guide" />
+        </menu>
+    </item>
+
+</menu>

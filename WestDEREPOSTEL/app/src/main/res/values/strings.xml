@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WestDEREPOSTEL</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="services">Services</string>
+    <string name="operator_login">Operator Login</string>
+    <string name="notifications">Notifications</string>
+    <string name="guide">Guide</string>
+    <string name="west_regional_delegation_of_post_and_telecommunications">West Regional Delegation of Post and Telecommunications</string>
+</resources>
