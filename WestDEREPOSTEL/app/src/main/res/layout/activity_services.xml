@@ -33,6 +33,7 @@
         android:columnOrderPreserved="false">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/idGeneralAffairsBtn"
             android:layout_width="155dp"
             android:layout_height="170dp"
             app:cardCornerRadius="12dp"

@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_west_derepostel_launcher"
+        android:icon="@drawable/splash_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -22,6 +22,10 @@
         <activity android:name=".ServicesActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".GeneralAffairsActivity"></activity>
+        <activity android:name=".GuideActivity"></activity>
+        <activity android:name=".ChatroomActivity"></activity>
+        <activity android:name=".OperatorsActivity"></activity>
     </application>
 
 </manifest>

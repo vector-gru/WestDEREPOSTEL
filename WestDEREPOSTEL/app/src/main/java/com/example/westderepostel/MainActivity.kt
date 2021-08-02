@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
 
+        content_main_guide_btn.setOnClickListener {
+            startActivity(Intent(this, GuideActivity::class.java))
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

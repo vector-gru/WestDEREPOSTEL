@@ -4,26 +4,30 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_services.*
+import kotlinx.android.synthetic.main.activity_general_affairs.*
 
-class ServicesActivity : AppCompatActivity(){
+
+class GeneralAffairsActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_services)
+        setContentView(R.layout.activity_general_affairs)
 
-        setSupportActionBar(services_toolbar)
+        setSupportActionBar(general_affairs_toolbar)
 
         actionBar?.setDisplayHomeAsUpEnabled(true)
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        idGeneralAffairsBtn.setOnClickListener {
-            startActivity(Intent(this, GeneralAffairsActivity::class.java))
+        chatRoomButton.setOnClickListener {
+            startActivity(Intent(this, ChatroomActivity::class.java))
         }
 
+        operatorsButton.setOnClickListener {
+            startActivity(Intent(this, OperatorsActivity::class.java))
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.toolbar_services_menu,menu)
+        menuInflater.inflate(R.menu.toolbar_general_affairs_menu,menu)
         return true
     }
 
@@ -31,5 +35,4 @@ class ServicesActivity : AppCompatActivity(){
         onBackPressed()
         return true
     }
-
 }

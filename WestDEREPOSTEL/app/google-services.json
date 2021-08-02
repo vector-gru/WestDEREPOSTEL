@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "409754454681",
+    "project_id": "westderepostel",
+    "storage_bucket": "westderepostel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409754454681:android:40efcdfa60de3bbd0a8608",
+        "android_client_info": {
+          "package_name": "com.example.derepostelouest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409754454681-m92imhjvie38b57hmgrq7tjaru10ddoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC08-nj2HFnrS4iZpr-ccSPvCo2fct9iGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409754454681-m92imhjvie38b57hmgrq7tjaru10ddoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
