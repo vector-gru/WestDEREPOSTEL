@@ -9,11 +9,10 @@
     </item>
 
     <item
-        android:id="@+id/add"
+        android:id="@+id/idSignOut"
         android:checkable="false"
-        android:icon="@drawable/ic_baseline_add_24"
-        android:title="Add"
-        app:showAsAction="collapseActionView">
+        android:title="Sign out"
+        app:showAsAction="ifRoom">
 
     </item>
 

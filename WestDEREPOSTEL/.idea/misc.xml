@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/btn_stroke.xml" value="0.240625" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/chat_message_bg.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/content_main_header_background.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/login_bg.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/main_btn_bg.xml" value="0.240625" />
@@ -17,6 +18,8 @@
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_operators.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_services.xml" value="0.221025641025641" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/chat_from_row.xml" value="0.25" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/chat_to_row.xml" value="0.22" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/content_main.xml" value="0.221025641025641" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/menu/toolbar_general_affairs_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/menu/toolbar_services_menu.xml" value="0.221025641025641" />

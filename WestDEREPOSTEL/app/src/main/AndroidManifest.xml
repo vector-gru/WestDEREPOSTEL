@@ -19,13 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ServicesActivity"></activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".GeneralAffairsActivity"></activity>
-        <activity android:name=".GuideActivity"></activity>
-        <activity android:name=".ChatroomActivity"></activity>
-        <activity android:name=".OperatorsActivity"></activity>
+        <activity android:name=".ServicesActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".GeneralAffairsActivity"/>
+        <activity android:name=".GuideActivity"/>
+        <activity android:name=".ChatroomActivity"/>
+        <activity android:name=".OperatorsActivity"/>
     </application>
 
 </manifest>
