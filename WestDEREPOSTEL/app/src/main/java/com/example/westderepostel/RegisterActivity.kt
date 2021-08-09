@@ -1,6 +1,7 @@
 package com.example.westderepostel
 
 import android.app.Activity
+import android.app.Dialog
 import android.content.Intent
 import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
@@ -8,16 +9,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.Window
 import android.widget.Toast
+import com.example.westderepostel.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
 import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
+
+    lateinit var dialog : Dialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,27 +81,36 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun performRegister(){
         val email = idEmailRegister.text.toString()
-        val code = idCodeRegister.text.toString()
+        val password = idPasswordRegister.text.toString()
+        val username = idUsernameRegisterText.text.toString()
 
-        if (email.isEmpty() || code.isEmpty()) {
-            Toast.makeText(this, "Please enter text in email/code", Toast.LENGTH_SHORT).show()
+        if (email.isEmpty() || password.isEmpty() || username.isEmpty()) {
+            Toast.makeText(this, "Please fill in all the fields correctly", Toast.LENGTH_SHORT).show()
             return
         }
+        showProgressBar()
+        idEmailRegister.text?.clear()
+        idUsernameRegisterText.text?.clear()
+        idPasswordRegister.text?.clear()
+        Toast.makeText(this, "Please hold on let us register you in the system!!", Toast.LENGTH_LONG).show()
 
         Log.d("RegisterActivity", "Email is:" + email)
-        Log.d("RegisterActivity", "The code is: $code")
+        Log.d("RegisterActivity", "The code is: $password")
 
         //Firebase Authentication to create a user with email and password
-        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, code)
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                 if (!it.isSuccessful) return@addOnCompleteListener
 
                 //else if successful
+                hideProgressBar()
                 Log.d("RegisterActivity", "Successfully created user with uid: ${it.result?.user?.uid}")
+                Toast.makeText(this, "Account ${it.result?.user} successfully created", Toast.LENGTH_LONG).show()
 
                 uploadImageToFirebaseStorage()
             }
             .addOnFailureListener {
+                hideProgressBar()
                 Log.d("RegisterActivity", "Failed to create user: ${it.message}")
                 Toast.makeText(this, "Failed to create user: ${it.message}", Toast.LENGTH_LONG).show()
             }
@@ -143,6 +158,18 @@ class RegisterActivity : AppCompatActivity() {
             }
     }
 
+    private fun showProgressBar() {
+        dialog = Dialog(this@RegisterActivity)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setContentView(R.layout.dialogue_wait)
+        dialog.setCanceledOnTouchOutside(false)
+        dialog.show()
+    }
+
+    private fun hideProgressBar(){
+        dialog.dismiss()
+    }
+
 }
 
-class User(val uid: String, val username: String, val profileImageUrl: String)
+//class User(val uid: String, val username: String, val profileImageUrl: String)

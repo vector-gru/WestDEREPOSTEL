@@ -25,8 +25,11 @@
         android:layout_height="50dp"
         android:ems="10"
         android:hint="Enter Message"
+        android:maxWidth="200dp"
+        android:maxHeight="230dp"
+        android:textAlignment="viewStart"
         android:background="@color/white"
-        android:inputType="textPersonName"
+        android:inputType="textLongMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/idMessageSendBtnChatroom"
         app:layout_constraintStart_toStartOf="parent" />

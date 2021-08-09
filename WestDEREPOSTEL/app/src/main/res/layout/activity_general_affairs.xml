@@ -41,18 +41,45 @@
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/Circular" />
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/idProfileImageGenAff"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:civ_border_width="2dp"
+            android:src="@drawable/avatar_profile_picture_vector"
+            app:civ_border_color="@color/white"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/idServiceImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
+            android:id="@+id/idProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="cursive"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idServiceImage"
+            app:layout_constraintTop_toBottomOf="@id/idProfileImageGenAff" />
+
+        <TextView
+            android:id="@+id/IdServiceTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GENERAL AFFAIRS SERVICE"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:paddingBottom="10dp"
             android:gravity="center_horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/idServiceImage"
-            app:layout_constraintStart_toStartOf="parent"
+            android:paddingBottom="10dp"
+            android:text="GENERAL AFFAIRS SERVICE"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/generalAffairsMainHeader"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/generalAffairsMainHeader"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idServiceImage" />
 
 
 
@@ -153,8 +180,8 @@
                 android:layout_below="@+id/idNewsTitle"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
-                android:justificationMode="inter_word"
                 android:background="@drawable/btn_stroke"
+                android:justificationMode="inter_word"
                 android:padding="15dp"
                 android:text="@string/newsDetails"
                 android:textColor="@color/black"

@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
                     android:drawablePadding="6dp"
-                    android:hint="name"
+                    android:hint="username"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,14 +115,14 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idCodeRegister"
+                    android:id="@+id/idPasswordRegister"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:layout_marginBottom="24dp"
                     android:drawableStart="@drawable/ic_baseline_lock_24"
                     android:drawablePadding="6dp"
-                    android:hint="personal code here..."
+                    android:hint="password here..."
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -159,6 +159,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:civ_border_width="4dp"
+        android:src="@drawable/avatar_profile_picture_vector"
         app:layout_constraintBottom_toBottomOf="@+id/idSelectPhotoRegistrationBtn"
         app:layout_constraintEnd_toEndOf="@+id/idSelectPhotoRegistrationBtn"
         app:layout_constraintStart_toStartOf="@+id/idSelectPhotoRegistrationBtn"
