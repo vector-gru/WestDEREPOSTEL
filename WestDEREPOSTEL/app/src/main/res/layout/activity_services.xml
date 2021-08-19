@@ -33,6 +33,41 @@
         android:columnOrderPreserved="false">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/idDelegateChambers"
+            android:layout_width="155dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_stroke"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_baseline_attach_email_24"
+                    android:layout_marginTop="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delegate_s_chambers"
+                    android:gravity="center"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:id="@+id/idGeneralAffairsBtn"
             android:layout_width="155dp"
             android:layout_height="170dp"
@@ -56,9 +91,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="General Affairs"
+                    android:text="@string/general_affairs"
+                    android:gravity="center"
                     android:fontFamily="@font/googlesans_bold"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textColor="@color/black"
                     android:layout_marginTop="20dp"/>
 
@@ -89,9 +125,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Network Security"
+                    android:text="@string/network_security"
                     android:fontFamily="@font/googlesans_bold"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:layout_marginTop="20dp"/>
@@ -123,9 +159,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Electronic Communications"
+                    android:text="@string/electronic_communications"
                     android:fontFamily="@font/googlesans_bold"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:layout_marginTop="20dp"/>
@@ -157,9 +193,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="General Affairs"
+                    android:text="@string/follow_up_and_postal_activities"
                     android:fontFamily="@font/googlesans_bold"
-                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textSize="17sp"
                     android:textColor="@color/black"
                     android:layout_marginTop="20dp"/>
 
@@ -190,42 +227,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regional Brigade"
+                    android:text="@string/regional_brigade"
                     android:fontFamily="@font/googlesans_bold"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"/>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="155dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            android:layout_margin="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/btn_stroke"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/ic_baseline_attach_email_24"
-                    android:layout_marginTop="18dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="General Affairs"
-                    android:fontFamily="@font/googlesans_bold"
-                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
                     android:textColor="@color/black"
                     android:layout_marginTop="20dp"/>
 

@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, GuideActivity::class.java))
         }
 
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

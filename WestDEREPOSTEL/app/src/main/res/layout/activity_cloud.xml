@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CloudActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idCloudToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="         Cloud"
+        app:subtitle="Save/Retrieve Files"/>
+
+    <Button
+        android:id="@+id/idFetchFilesBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Fetch Files"
+        android:textSize="18sp"
+        android:layout_below="@id/idCloudToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/idSelectFileBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Select File"
+        android:textSize="18sp"
+        android:layout_below="@id/idFetchFilesBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/idNotificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No text is selected"
+        android:textSize="20sp"
+        android:layout_below="@id/idSelectFileBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/idUploadBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:textSize="18sp"
+        android:layout_below="@id/idNotificationTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+</RelativeLayout>

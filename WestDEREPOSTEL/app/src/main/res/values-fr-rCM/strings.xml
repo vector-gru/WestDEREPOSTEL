@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WestDEREPOSTEL</string>
+    <string name="open">Ouvert</string>
+    <string name="close">Fermer</string>
+    <string name="services">Services</string>
+    <string name="operator_login">Connexion Operateur</string>
+    <string name="notifications">Notifications</string>
+    <string name="guide">Guide</string>
+    <string name="west_regional_delegation_of_post_and_telecommunications">Delegation Regional Ouest Des Post et Telecommunications</string>
+    <string name="delegate_s_chambers" translatable="false">Le Cabinet Du Delegue</string>
+    <string name="general_affairs">Affaires Generales</string>
+    <string name="network_security">Reseau et Securite</string>
+    <string name="electronic_communications">Com Electroniques</string>
+    <string name="follow_up_and_postal_activities">Suivi et Activites Postales</string>
+    <string name="regional_brigade">Brigade Regionale</string>
+    <string name="peace_work_fatherland">Paix-Travail-Patrie</string>
+</resources>

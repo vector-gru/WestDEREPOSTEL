@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idScheduleToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="Meeting Schedules"
+        app:titleMarginStart="15dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idScheduleToolbar"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Schedules and To Do"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/idScheduleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:hint="Add an Item"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/idLinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/idScheduleEditText"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/idAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"/>
+        <Button
+            android:id="@+id/idDeleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="30dp"/>
+        <Button
+            android:id="@+id/idClearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/idTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@id/idLinearLayout1"
+        android:text="My To Do List"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <ListView
+        android:id="@+id/idScheduleListView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idTextView1"
+        android:choiceMode="multipleChoice" />
+
+</RelativeLayout>

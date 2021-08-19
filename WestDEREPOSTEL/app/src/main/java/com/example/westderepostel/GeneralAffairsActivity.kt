@@ -69,6 +69,14 @@ class GeneralAffairsActivity : AppCompatActivity(){
             startActivity(Intent(this, OperatorsActivity::class.java))
         }
 
+        schedulesButton.setOnClickListener {
+            startActivity(Intent(this, ScheduleActivity::class.java))
+        }
+
+        cloudFilesButton.setOnClickListener {
+            startActivity(Intent(this, CloudResourcesActivity::class.java))
+        }
+
     }
 
     private fun getUserData() {
@@ -87,7 +95,7 @@ class GeneralAffairsActivity : AppCompatActivity(){
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+
             }
 
 

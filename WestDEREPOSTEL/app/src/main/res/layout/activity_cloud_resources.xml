@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CloudResourcesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idCloudResourcesToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="         Cloud"
+        app:subtitle="Save/Retrieve Files"/>
+
+    <Button
+        android:id="@+id/idUploadImageFilesBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Image Files"
+        android:textSize="18sp"
+        android:layout_below="@id/idCloudResourcesToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/idUploadPdfFilesBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upload PDF Files"
+        android:textSize="18sp"
+        android:layout_below="@id/idUploadImageFilesBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+
+    <Button
+        android:id="@+id/idUploadUploadDocxBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Word Docs"
+        android:textSize="18sp"
+        android:layout_below="@id/idUploadPdfFilesBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>

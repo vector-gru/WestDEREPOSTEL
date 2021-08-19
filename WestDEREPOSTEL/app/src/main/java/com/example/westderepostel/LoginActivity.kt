@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 class LoginActivity: AppCompatActivity() {
 
-    lateinit var dialog : Dialog
+    private lateinit var dialog : Dialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +50,7 @@ class LoginActivity: AppCompatActivity() {
         idEmailLogin.text?.clear()
         idCodeLogin.text?.clear()
 
-        Log.d("LoginActivity", "Email is:" + email)
+        Log.d("LoginActivity", "Email is:$email")
         Log.d("LoginActivity", "The code is: $code")
 
         //Firebase Authentication to create a user with email and password

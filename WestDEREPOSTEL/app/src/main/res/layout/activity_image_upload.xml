@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".ImageUploadActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idImageUploadToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="         Upload Images"
+        app:subtitle="Save/Retrieve Files"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Cloud Storage"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/idFirebaseImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/idSelectImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:text="Select Image"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/idUploadImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Upload Image"
+        android:textSize="24sp"/>
+
+</LinearLayout>

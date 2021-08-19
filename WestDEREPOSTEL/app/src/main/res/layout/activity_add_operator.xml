@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBF5F8"
+    tools:context=".AddOperatorActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/idImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/idSelectPhotoAddOperatorBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/register_image_btn_bg"
+            android:text="Image"
+            app:layout_constraintBottom_toBottomOf="@+id/idSelectPhotoAddOperatorImageView"
+            app:layout_constraintEnd_toEndOf="@+id/idSelectPhotoAddOperatorImageView"
+            app:layout_constraintStart_toStartOf="@+id/idSelectPhotoAddOperatorImageView"
+            app:layout_constraintTop_toTopOf="@+id/idSelectPhotoAddOperatorImageView" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/idSelectPhotoAddOperatorImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/avatar_profile_picture_vector"
+            app:civ_border_width="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idImageView" />
+
+
+        <TextView
+            android:id="@+id/idNewOperatorHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="8dp"
+            android:text="New Operator"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/idOperatorNameEditText"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input"
+            android:hint="Name"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idSelectPhotoAddOperatorImageView" />
+
+        <EditText
+            android:id="@+id/idOperatorEmailEditText"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idOperatorNameEditText" />
+
+        <EditText
+            android:id="@+id/idOperatorPhoneEditText"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:hint="Phone"
+            android:inputType="number|phone"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idOperatorEmailEditText" />
+
+
+
+        <EditText
+            android:id="@+id/idActivityEditText"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:hint="Activity"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idOperatorPhoneEditText" />
+
+        <EditText
+            android:id="@+id/idLocationEditText"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:hint="Location"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idActivityEditText" />
+
+        <EditText
+            android:id="@+id/idAccessCodeEditText"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:hint="Access Code"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idLocationEditText" />
+
+        <Button
+            android:id="@+id/idSaveOperatorBtn"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="690dp"
+            android:background="@drawable/main_btn_bg"
+            android:text="Save"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Add Logo"
+            app:layout_constraintBottom_toBottomOf="@+id/idSelectPhotoAddOperatorImageView"
+            app:layout_constraintEnd_toStartOf="@+id/idSelectPhotoAddOperatorImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/idSelectPhotoAddOperatorImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
