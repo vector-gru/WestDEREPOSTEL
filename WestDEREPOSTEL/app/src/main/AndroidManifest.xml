@@ -19,9 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WestDEREPOSTEL"
         tools:targetApi="lollipop">
+
+        <!--
         <activity
             android:name=".OperatorListActivity"
             android:exported="true" />
+        -->
         <activity android:name=".MainActivity" />
         <activity
             android:name=".SplashScreen"
@@ -48,6 +51,9 @@
         <activity android:name=".CloudResourcesActivity" />
         <activity android:name=".ViewUploadsActivity" />
         <activity android:name=".Cloud2Activity" />
+        <activity android:name=".OperatorHome"/>
+        <activity android:name=".cloudsave.ShowActivity" />
+        <activity android:name=".cloudsave.CloudMainActivity" />
     </application>
 
 </manifest>

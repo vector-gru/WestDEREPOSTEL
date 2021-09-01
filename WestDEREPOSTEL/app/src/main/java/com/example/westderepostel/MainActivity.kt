@@ -28,6 +28,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, GuideActivity::class.java))
         }
 
+        content_main_oplogin_btn.setOnClickListener {
+            startActivity(Intent(this, OperatorHome::class.java))
+        }
+
 
     }
 

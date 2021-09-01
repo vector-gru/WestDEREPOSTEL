@@ -4,26 +4,26 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.westderepostel.cloudsave.CloudMainActivity
-import kotlinx.android.synthetic.main.activity_cloud_resources.*
-import kotlinx.android.synthetic.main.activity_guide.*
-import kotlinx.android.synthetic.main.activity_guide.idGuideToolbar
+//import com.example.westderepostel.javaTodo.activity.MainActivity2
+import kotlinx.android.synthetic.main.activity_operator_home.*
 
-class CloudResourcesActivity : AppCompatActivity() {
+
+class OperatorHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cloud_resources)
+        setContentView(R.layout.activity_operator_home)
 
-        setSupportActionBar(idCloudResourcesToolbar)
+        setSupportActionBar(idOperatorHomeToolbar)
 
         actionBar?.setDisplayHomeAsUpEnabled(true)
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        idUploadPdfFilesBtn.setOnClickListener {
-            startActivity(Intent(this, CloudActivity::class.java))
-        }
-        idUploadImageFilesBtn.setOnClickListener {
+        /* schedulesButton.setOnClickListener {
             startActivity(Intent(this, CloudMainActivity::class.java))
-        }
+        }*/
+
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

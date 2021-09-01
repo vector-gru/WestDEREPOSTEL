@@ -12,4 +12,7 @@
     <color name="gray">#CFCFCF</color>
     <color name="lightPurple">#FF9E9E</color>
     <color name="blue">#009CAF</color>
+
+    <color name="colorPrimary">#3A1A31</color>
+    <color name="colorPrimaryDark">#9C72A0</color>
 </resources>

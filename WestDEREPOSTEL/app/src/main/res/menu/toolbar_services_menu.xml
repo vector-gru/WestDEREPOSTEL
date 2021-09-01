@@ -11,7 +11,7 @@
     <item
         android:id="@+id/idSignOut"
         android:checkable="false"
-        android:title="Sign out"
+        android:title="@string/log_out"
         app:showAsAction="ifRoom">
 
     </item>

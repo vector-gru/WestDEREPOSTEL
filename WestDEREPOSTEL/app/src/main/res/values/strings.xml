@@ -34,6 +34,16 @@
     <string name="electronic_communications">Electronic Communications</string>
     <string name="follow_up_and_postal_activities">Follow_Up and Postal Activities</string>
     <string name="regional_brigade">Regional Brigade</string>
-    <string name="peace_work_fatherland">Peace-Work-Fatherland</string>
+    <string name="peace_work_fatherland">Peace Work  Fatherland</string>
+    <string name="nnew">New?</string>
+    <string name="email" translatable="false">email</string>
+    <string name="personal_code_here">password here...</string>
+    <string name="registration">Registration</string>
+    <string name="username">username</string>
+    <string name="register_btn">Register</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="login">Login</string>
+    <string name="log_out">Logout</string>
+
 
 </resources>

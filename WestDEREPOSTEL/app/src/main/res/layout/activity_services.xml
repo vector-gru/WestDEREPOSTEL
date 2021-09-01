@@ -50,7 +50,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/ic_baseline_attach_email_24"
+                    app:srcCompat="@drawable/ic_baseline_attach_email_24"
                     android:layout_marginTop="18dp"/>
 
                 <TextView
@@ -85,7 +85,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/ic_baseline_emoji_people_24"
+                    app:srcCompat="@drawable/ic_baseline_emoji_people_24"
                     android:layout_marginTop="18dp"/>
 
                 <TextView
@@ -119,7 +119,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/ic_baseline_phonelink_lock_24"
+                    app:srcCompat="@drawable/ic_baseline_phonelink_lock_24"
                     android:layout_marginTop="18dp"/>
 
                 <TextView
@@ -153,7 +153,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/ic_baseline_perm_phone_msg_24"
+                    app:srcCompat="@drawable/ic_baseline_perm_phone_msg_24"
                     android:layout_marginTop="18dp"/>
 
                 <TextView
@@ -187,7 +187,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/ic_baseline_mark_email_read_24"
+                    app:srcCompat="@drawable/ic_baseline_mark_email_read_24"
                     android:layout_marginTop="18dp"/>
 
                 <TextView
@@ -221,7 +221,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/ic_baseline_security_24"
+                    app:srcCompat="@drawable/ic_baseline_security_24"
                     android:layout_marginTop="18dp"/>
 
                 <TextView

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/googlesans_bold"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/myTheme1"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -49,7 +49,7 @@
             android:fontFamily="@font/googlesans_bold"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:text="New?"
+            android:text="@string/nnew"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_email_24"
                     android:drawablePadding="6dp"
-                    android:hint="email"
+                    android:hint="@string/email"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,7 +104,7 @@
                     android:layout_marginBottom="24dp"
                     android:drawableStart="@drawable/ic_baseline_lock_24"
                     android:drawablePadding="6dp"
-                    android:hint="personal code here..."
+                    android:hint="@string/personal_code_here"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/main_btn_bg"
         android:fontFamily="@font/googlesans_bold"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"

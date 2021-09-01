@@ -14,5 +14,13 @@
     <string name="electronic_communications">Com Electroniques</string>
     <string name="follow_up_and_postal_activities">Suivi et Activites Postales</string>
     <string name="regional_brigade">Brigade Regionale</string>
-    <string name="peace_work_fatherland">Paix-Travail-Patrie</string>
+    <string name="peace_work_fatherland">Paix Travail Patrie</string>
+    <string name="nnew">Nouveau?</string>
+    <string name="personal_code_here">mot de passe ici...</string>
+    <string name="registration">Inscription</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="register_btn">S\'inscrire</string>
+    <string name="upload_image">Image ici</string>
+    <string name="login">Connexion</string>
+    <string name="log_out">Se deconnecter</string>
 </resources>
