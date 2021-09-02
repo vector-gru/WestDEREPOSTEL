@@ -103,6 +103,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/idNetworkSecurityBtn"
             android:layout_width="155dp"
             android:layout_height="170dp"
             app:cardCornerRadius="12dp"

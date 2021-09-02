@@ -44,6 +44,20 @@
     <string name="upload_image">Upload Image</string>
     <string name="login">Login</string>
     <string name="log_out">Logout</string>
+    <string name="words_of_the_delegate">Monthly Greetings to all my colleagues,
+                                            I hope you all are doing well, this month is come with
+                                          so much work and expectations from us. So I pray we continue
+                                          with the resilience and hard work that has always kept us moving.
+                                          I wish you all the best, and stay safe everyone.</string>
+    <string name="the_delegate">THE DELEGATE</string>
+    <string name="mr_fuafung_johnson">Mr. FUAFUNG JOHNSON</string>
+    <string name="chief_of_service">Chief of Service</string>
+    <string name="chat_room">Chat Room</string>
+    <string name="schedules">Schedules</string>
+    <string name="operators">Operators</string>
+    <string name="cloud_files">Cloud Files</string>
+    <string name="news_in_the_ministry">News in the Ministry</string>
+    <string name="general_affairs_service">GENERAL AFFAIRS SERVICE</string>
 
 
 </resources>

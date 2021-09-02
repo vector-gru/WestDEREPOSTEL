@@ -4,16 +4,16 @@
     <string name="open">Ouvert</string>
     <string name="close">Fermer</string>
     <string name="services">Services</string>
-    <string name="operator_login">Connexion Operateur</string>
+    <string name="operator_login">Connexion opérateur</string>
     <string name="notifications">Notifications</string>
     <string name="guide">Guide</string>
-    <string name="west_regional_delegation_of_post_and_telecommunications">Delegation Regional Ouest Des Post et Telecommunications</string>
-    <string name="delegate_s_chambers" translatable="false">Le Cabinet Du Delegue</string>
-    <string name="general_affairs">Affaires Generales</string>
-    <string name="network_security">Reseau et Securite</string>
-    <string name="electronic_communications">Com Electroniques</string>
-    <string name="follow_up_and_postal_activities">Suivi et Activites Postales</string>
-    <string name="regional_brigade">Brigade Regionale</string>
+    <string name="west_regional_delegation_of_post_and_telecommunications">Délégation Régionale des Postes et Télécommunications de l\'Ouest</string>
+    <string name="delegate_s_chambers" translatable="false">Le Cabinet du Délégué</string>
+    <string name="general_affairs">Affaires Générales</string>
+    <string name="network_security">Reseau et Sécurité</string>
+    <string name="electronic_communications">Comm Électronique</string>
+    <string name="follow_up_and_postal_activities">Suivi et Activités Postales</string>
+    <string name="regional_brigade">Brigade Régionale</string>
     <string name="peace_work_fatherland">Paix Travail Patrie</string>
     <string name="nnew">Nouveau?</string>
     <string name="personal_code_here">mot de passe ici...</string>
@@ -22,5 +22,15 @@
     <string name="register_btn">S\'inscrire</string>
     <string name="upload_image">Image ici</string>
     <string name="login">Connexion</string>
-    <string name="log_out">Se deconnecter</string>
+    <string name="log_out">Se déconnecter</string>
+    <string name="words_of_the_delegate">Salutations mensuelles à tous mes collègues,                                              J\'espère que vous allez tous bien, ce mois est venu avec                                            avec tant de travail et d\'attentes de notre part. Alors je prie pour que nous continuions                                            avec la résilience et le travail acharné qui nous ont toujours fait avancer.                                            Je vous souhaite tout le meilleur et restez en sécurité à tous.</string>
+    <string name="the_delegate">LE DÉLÉGUÉ</string>
+    <string name="mr_fuafung_johnson">M. FUAFUNG JOHNSON</string>
+    <string name="chief_of_service">Chef de Service</string>
+    <string name="chat_room">Tchat</string>
+    <string name="schedules">Des Horaires</string>
+    <string name="operators">Les Opérateurs</string>
+    <string name="cloud_files">Fichiers Cloud</string>
+    <string name="news_in_the_ministry">Actualités</string>
+    <string name="general_affairs_service">SERVICE DES AFFAIRES GÉNÉRALES</string>
 </resources>

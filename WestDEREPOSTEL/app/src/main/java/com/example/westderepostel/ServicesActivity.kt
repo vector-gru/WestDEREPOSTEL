@@ -26,6 +26,16 @@ class ServicesActivity : AppCompatActivity(){
             startActivity(Intent(this, GeneralAffairsActivity::class.java))
         }
 
+        //Start the Delegate's Activity when btn is clicked
+        idDelegateChambers.setOnClickListener {
+            startActivity(Intent(this, DelegateActivity::class.java))
+        }
+
+        //Start the Network Security Activity when btn is clicked
+        idNetworkSecurityBtn.setOnClickListener {
+            startActivity(Intent(this, NetworkSecurityActivity::class.java))
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DelegateActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/idDelegateImage"
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/the_delegate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:strokeColor="@color/myTheme1"
+        app:strokeWidth="10dp"/>
+
+    <TextView
+        android:id="@+id/idDelegateTitleText"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/the_delegate"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@id/idDelegateImage"
+        app:layout_constraintStart_toStartOf="@id/idDelegateImage"
+        app:layout_constraintTop_toBottomOf="@id/idDelegateImage" />
+
+    <TextView
+        android:id="@+id/idDelegateNameText"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/mr_fuafung_johnson"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@id/idDelegateTitleText"
+        app:layout_constraintStart_toStartOf="@id/idDelegateTitleText"
+        app:layout_constraintTop_toBottomOf="@id/idDelegateTitleText" />
+
+    <TextView
+        android:id="@+id/idDelegateText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/words_of_the_delegate"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        app:layout_constraintEnd_toEndOf="@+id/idDelegateNameText"
+        app:layout_constraintStart_toStartOf="@+id/idDelegateNameText"
+        app:layout_constraintTop_toBottomOf="@id/idDelegateNameText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

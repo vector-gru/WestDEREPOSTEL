@@ -22,7 +22,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/contentMainHeader"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/content_main_header_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
 
         <TextView
             android:id="@+id/homeTitle"
-            android:layout_width="200dp"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="27dp"
             android:fontFamily="@font/googlesans_bold"
@@ -50,11 +50,11 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
-            android:src="@drawable/app_logo"
+            android:src="@drawable/splash_logo"
             app:layout_constraintBottom_toTopOf="@id/cam_motto"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/SpecificCornerRounded"
+            app:shapeAppearanceOverlay="@style/Circular1"
             app:strokeColor="#FFFFFF" />
 
         <TextView

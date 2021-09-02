@@ -19,7 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WestDEREPOSTEL"
         tools:targetApi="lollipop">
-
+        <activity
+            android:name=".cloudsave1.ShowActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".cloudsave1.Cloud1MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DelegateActivity"
+            android:exported="true" />
         <!--
         <activity
             android:name=".OperatorListActivity"
@@ -51,9 +59,10 @@
         <activity android:name=".CloudResourcesActivity" />
         <activity android:name=".ViewUploadsActivity" />
         <activity android:name=".Cloud2Activity" />
-        <activity android:name=".OperatorHome"/>
+        <activity android:name=".OperatorHome" />
         <activity android:name=".cloudsave.ShowActivity" />
         <activity android:name=".cloudsave.CloudMainActivity" />
+        <activity android:name=".NetworkSecurityActivity" />
     </application>
 
 </manifest>
