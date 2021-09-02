@@ -24,7 +24,7 @@ public class ShowActivity1 extends AppCompatActivity {
 
     private MyAdapter1 adapter;
 
-    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Image1");
+    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("NetSecImageUploads");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

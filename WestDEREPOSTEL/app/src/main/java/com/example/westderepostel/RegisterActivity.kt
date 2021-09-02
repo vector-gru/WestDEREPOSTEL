@@ -82,16 +82,16 @@ class RegisterActivity : AppCompatActivity() {
     private fun performRegister(){
         val email = idEmailRegister.text.toString()
         val password = idPasswordRegister.text.toString()
-        val username = idUsernameRegisterText.text.toString()
+        val username = idUserNameRegisterText.text.toString()
 
         if (email.isEmpty() || password.isEmpty() || username.isEmpty()) {
             Toast.makeText(this, "Please fill in all the fields correctly", Toast.LENGTH_SHORT).show()
             return
         }
         showProgressBar()
-        idEmailRegister.text?.clear()
-        idUsernameRegisterText.text?.clear()
-        idPasswordRegister.text?.clear()
+        /*idEmailRegister.text?.clear()
+        idUserNameRegisterText.text?.clear()
+        idPasswordRegister.text?.clear()*/
         Toast.makeText(this, "Please hold on let us register you in the system!!", Toast.LENGTH_LONG).show()
 
         Log.d("RegisterActivity", "Email is:" + email)
@@ -141,7 +141,7 @@ class RegisterActivity : AppCompatActivity() {
         val uid = FirebaseAuth.getInstance().uid ?: ""
         val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
 
-        val user = User(uid, idUsernameRegisterText.text.toString(), profileImageUrl)
+        val user = User(uid, idUserNameRegisterText.text.toString(), profileImageUrl)
 
 
         ref.setValue(user)
@@ -151,6 +151,10 @@ class RegisterActivity : AppCompatActivity() {
                 val intent = (Intent(this, ServicesActivity::class.java))
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
+
+                idEmailRegister.text?.clear()
+                idUserNameRegisterText.text?.clear()
+                idPasswordRegister.text?.clear()
 
             }
             .addOnFailureListener {

@@ -37,7 +37,7 @@ public class CloudMainActivity extends AppCompatActivity {
     private ProgressBar progressBar;
 
     //vars
-    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Image");
+    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("genAffImageUploads");
     private StorageReference reference = FirebaseStorage.getInstance().getReference();
     private Uri imageUri;
 
@@ -96,7 +96,7 @@ public class CloudMainActivity extends AppCompatActivity {
 
     private void uploadToFirebase(Uri uri){
 
-        final StorageReference fileRef = reference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
+        final StorageReference fileRef = reference.child("genAffImageUploads").child(System.currentTimeMillis() + "." + getFileExtension(uri));
         fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

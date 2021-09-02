@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="false"
-            android:background="@drawable/btn_stroke"
+            android:background="@drawable/main_btn_bg"
             android:fontFamily="@font/googlesans_bold"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"

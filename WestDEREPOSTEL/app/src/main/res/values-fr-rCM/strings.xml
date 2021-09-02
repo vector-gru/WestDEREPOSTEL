@@ -33,4 +33,11 @@
     <string name="cloud_files">Fichiers Cloud</string>
     <string name="news_in_the_ministry">Actualités</string>
     <string name="general_affairs_service">SERVICE DES AFFAIRES GÉNÉRALES</string>
+    <string name="operator_verification">Vérification de l\'opérateur</string>
+    <string name="enter_your_accesscode">Entrez votre code d\'accès</string>
+    <string name="enter_your_email_here">Entrez votre email ici...</string>
+    <string name="check_in">Enregistrement</string>
+    <string name="welcome_text">Bienvenue sur notre plateforme. Ensemble, faisons de notre ville un endroit meilleur.</string>
+    <string name="messaging">Messagerie</string>
+    <string name="name_of_operator">Nom de l\'opérateur</string>
 </resources>

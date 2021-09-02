@@ -37,7 +37,7 @@ public class Cloud1MainActivity extends AppCompatActivity {
     private ProgressBar progressBar1;
 
     //vars
-    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Image1");
+    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("NetSecImageUploads");
     private StorageReference reference = FirebaseStorage.getInstance().getReference();
     private Uri imageUri;
 
@@ -96,7 +96,7 @@ public class Cloud1MainActivity extends AppCompatActivity {
 
     private void uploadToFirebase(Uri uri){
 
-        final StorageReference fileRef = reference.child("Image1").child(System.currentTimeMillis() + "." + getFileExtension(uri));
+        final StorageReference fileRef = reference.child("NetSecImageUploads").child(System.currentTimeMillis() + "." + getFileExtension(uri));
         fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

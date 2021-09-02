@@ -81,7 +81,7 @@
                 android:paddingEnd="6dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idUsernameRegisterText"
+                    android:id="@+id/idUserNameRegisterText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"

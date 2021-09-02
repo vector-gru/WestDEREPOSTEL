@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         content_main_oplogin_btn.setOnClickListener {
-            startActivity(Intent(this, OperatorHome::class.java))
+            startActivity(Intent(this, OperatorVerificationActivity::class.java))
         }
 
 

@@ -23,7 +23,7 @@ public class ShowActivity extends AppCompatActivity {
 
     private MyAdapter adapter;
 
-    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Image");
+    private DatabaseReference root = FirebaseDatabase.getInstance().getReference("genAffImageUploads");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

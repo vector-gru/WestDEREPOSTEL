@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/RoundedSquare"
         app:strokeColor="@color/myTheme1"
-        app:strokeWidth="10dp"/>
+        app:strokeWidth="5dp"/>
 
     <TextView
         android:id="@+id/idDelegateTitleText"
