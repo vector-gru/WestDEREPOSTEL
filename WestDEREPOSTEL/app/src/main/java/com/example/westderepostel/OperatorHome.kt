@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.westderepostel.databinding.ActivityOperatorHomeBinding
 import com.example.westderepostel.models.Operator
+import com.example.westderepostel.todolistapp.TodoMainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
@@ -49,7 +50,7 @@ class OperatorHome : AppCompatActivity() {
         }*/
 
         idSchedulesBtn.setOnClickListener {
-            startActivity(Intent(this, ScheduleActivity::class.java))
+            startActivity(Intent(this, TodoMainActivity::class.java))
         }
 
         idMessagingBtn.setOnClickListener {

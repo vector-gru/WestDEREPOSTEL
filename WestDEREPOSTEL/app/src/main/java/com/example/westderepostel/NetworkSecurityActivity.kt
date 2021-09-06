@@ -7,6 +7,7 @@ import com.example.westderepostel.cloudsave1.Cloud1MainActivity
 import com.example.westderepostel.databinding.ActivityNetworkSecurityBinding
 import com.example.westderepostel.models.User
 import com.example.westderepostel.operators1.OperatorsActivity1
+import com.example.westderepostel.todolistapp.TodoMainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
@@ -57,7 +58,7 @@ class NetworkSecurityActivity : AppCompatActivity() {
         }
 
         idSchedulesBtn1.setOnClickListener {
-            startActivity(Intent(this, ScheduleActivity::class.java))
+            startActivity(Intent(this, TodoMainActivity::class.java))
         }
 
     }

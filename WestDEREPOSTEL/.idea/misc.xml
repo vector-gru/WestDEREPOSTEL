@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/btn_stroke.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/chat_message_bg.xml" value="0.240625" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/chat_to_message_bg.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/content_main_header_background.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/delete.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/input.xml" value="0.240625" />
@@ -39,11 +40,14 @@
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_services.xml" value="0.221025641025641" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_show.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_show1.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_todo_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_view_uploads.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/add_new_task.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/chat_from_row.xml" value="0.25" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/chat_to_row.xml" value="0.22" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/content_main.xml" value="0.221025641025641" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/dialogue_wait.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/each_task.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/fetch_recycler_view.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/fragment_file_upload.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/fragment_list.xml" value="0.18" />

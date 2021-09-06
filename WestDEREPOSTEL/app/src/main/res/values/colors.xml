@@ -16,6 +16,10 @@
     <color name="colorPrimary">#3A1A31</color>
     <color name="colorPrimaryDark">#9C72A0</color>
 
+    <!--The todo list app colors here-->
+    <color name="green_blue">#0A3D62</color>
+    <color name="dark_blue">#192A56</color>
+
 
     <!--<color name="myTheme1">#00BCD4</color>-->
 

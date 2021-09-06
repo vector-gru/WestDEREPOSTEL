@@ -93,6 +93,8 @@
     <string name="select_file">Select File</string>
     <string name="no_file_is_selected_yet">No file is selected yet</string>
     <string name="fetch_files">Fetch Files</string>
+    <string name="send">Send</string>
+    <string name="type_message">Type Message...</string>
 
 
 </resources>

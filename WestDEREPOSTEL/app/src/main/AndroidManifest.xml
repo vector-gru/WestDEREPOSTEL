@@ -20,6 +20,9 @@
         android:theme="@style/Theme.WestDEREPOSTEL"
         tools:targetApi="lollipop">
         <activity
+            android:name=".todolistapp.TodoMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".operators1.AddOperatorActivity1"
             android:exported="true" />
         <activity
