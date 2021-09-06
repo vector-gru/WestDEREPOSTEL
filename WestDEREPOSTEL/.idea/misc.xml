@@ -13,7 +13,9 @@
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/regis_bg.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/register_image_btn_bg.xml" value="0.2212962962962963" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/splash_screen.xml" value="0.240625" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/drawable/stroke_bg.xml" value="0.240625" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_add_operator.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_add_operator1.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_chatroom.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_cloud.xml" value="0.25" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_cloud1_main.xml" value="0.22447916666666667" />
@@ -31,6 +33,7 @@
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_operator_list.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_operator_verification.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_operators.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_operators1.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_schedule.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/activity_services.xml" value="0.221025641025641" />
@@ -47,7 +50,9 @@
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/fragment_recycler_view_item.xml" value="0.2" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/item.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/item1.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/nav_drawer_header.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/operator_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/layout/row_itemslayout.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/menu/nav_drawer_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/menu/toolbar_general_affairs_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/popel/AndroidStudioProjects/WestDEREPOSTEL/app/src/main/res/menu/toolbar_home.xml" value="0.22447916666666667" />

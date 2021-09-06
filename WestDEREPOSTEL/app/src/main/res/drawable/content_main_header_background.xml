@@ -7,7 +7,7 @@
         android:endColor="@color/white"
         android:startColor="@color/myTheme1"/>
     <corners
-        android:bottomLeftRadius="100dp"
+        android:bottomLeftRadius="50dp"
         android:bottomRightRadius="3dp"/>
 
 

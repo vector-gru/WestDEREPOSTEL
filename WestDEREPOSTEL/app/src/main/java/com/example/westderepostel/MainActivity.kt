@@ -32,6 +32,29 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, OperatorVerificationActivity::class.java))
         }
 
+        idWelcomeText.setOnClickListener {
+
+            idWelcomeText.animate().apply {
+                duration = 1000
+                rotationYBy(360f)
+            }.start()
+
+            logoHomeCircular.animate().apply {
+                duration = 2000
+                rotationXBy(360f)
+            }.start()
+
+        }
+
+        logoHomeCircular.setOnClickListener {
+
+            logoHomeCircular.animate().apply {
+                duration = 2000
+                rotationYBy(360f)
+            }.start()
+
+        }
+
 
     }
 

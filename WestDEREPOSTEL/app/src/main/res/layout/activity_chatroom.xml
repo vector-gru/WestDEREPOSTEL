@@ -50,7 +50,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:background="#3E949F"
+        android:background="#E6FFF4"
         app:layout_constraintBottom_toTopOf="@+id/idEditTextChatRoom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

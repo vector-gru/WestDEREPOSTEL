@@ -13,6 +13,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/googlesans_bold"
         android:text="@string/registration"
+        android:background="@drawable/stroke_bg"
         android:textColor="@color/myTheme1"
         android:textSize="26sp"
         android:textStyle="bold"
@@ -46,8 +47,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/main_btn_bg"
             android:fontFamily="@font/googlesans_bold"
+            android:outlineProvider="bounds"
+            android:elevation="20dp"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="@string/login"
@@ -119,7 +121,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:layout_marginBottom="24dp"
+                    android:layout_marginBottom="60dp"
                     android:drawableStart="@drawable/ic_baseline_lock_24"
                     android:drawablePadding="6dp"
                     android:hint="@string/personal_code_here"
@@ -140,8 +142,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintStart_toStartOf="@+id/cardView" />
 
     <ImageButton
         android:id="@+id/idSelectPhotoRegistrationBtn"

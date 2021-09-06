@@ -20,6 +20,12 @@
         android:theme="@style/Theme.WestDEREPOSTEL"
         tools:targetApi="lollipop">
         <activity
+            android:name=".operators1.AddOperatorActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".operators1.OperatorsActivity1"
+            android:exported="true" />
+        <activity
             android:name=".OperatorVerificationActivity"
             android:exported="true" />
         <activity

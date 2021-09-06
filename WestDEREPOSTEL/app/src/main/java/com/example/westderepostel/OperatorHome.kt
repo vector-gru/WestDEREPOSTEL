@@ -1,6 +1,7 @@
 package com.example.westderepostel
 
 //import com.example.westderepostel.javaTodo.activity.MainActivity2
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.westderepostel.databinding.ActivityOperatorHomeBinding
@@ -8,6 +9,7 @@ import com.example.westderepostel.models.Operator
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_general_affairs.*
 import kotlinx.android.synthetic.main.activity_operator_home.*
 
 
@@ -45,6 +47,18 @@ class OperatorHome : AppCompatActivity() {
         /* schedulesButton.setOnClickListener {
             startActivity(Intent(this, CloudMainActivity::class.java))
         }*/
+
+        idSchedulesBtn.setOnClickListener {
+            startActivity(Intent(this, ScheduleActivity::class.java))
+        }
+
+        idMessagingBtn.setOnClickListener {
+            startActivity(Intent(this, ChatroomActivity::class.java))
+        }
+
+        idFloatingBtn.setOnClickListener {
+            startActivity(Intent(this, ChatroomActivity::class.java))
+        }
 
 
 

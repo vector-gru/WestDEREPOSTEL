@@ -21,31 +21,34 @@
         android:id="@+id/idUploadImageFilesBtn"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Upload Image Files"
-        android:textSize="18sp"
         android:layout_below="@id/idCloudResourcesToolbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:text="Upload Image Files"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/idUploadPdfFilesBtn"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Upload PDF Files"
-        android:textSize="18sp"
         android:layout_below="@id/idUploadImageFilesBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:text="Upload PDF Files"
+        android:textSize="18sp" />
 
 
     <Button
         android:id="@+id/idUploadUploadDocxBtn"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Upload Word Docs"
-        android:textSize="18sp"
         android:layout_below="@id/idUploadPdfFilesBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:text="Upload Word Docs"
+        android:textSize="18sp" />
 
 </RelativeLayout>

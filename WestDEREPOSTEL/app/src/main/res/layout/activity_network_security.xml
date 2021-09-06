@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/generalAffairsMainHeader"
+        android:id="@+id/idNetworkSecurityMainHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/content_main_header_background"
@@ -78,7 +78,7 @@
             android:gravity="center_horizontal"
             android:paddingBottom="5dp"
             android:text="@string/chief_of_service"
-            android:textColor="@color/white"
+            android:textColor="#9A8686"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/idServiceImage"
             app:layout_constraintHorizontal_bias="0.459"
@@ -93,7 +93,7 @@
             android:gravity="center_horizontal"
             android:paddingBottom="5dp"
             android:text="Mr. Messi Atangana"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/IdServiceTitle"
@@ -112,35 +112,35 @@
         app:layout_constraintBottom_toTopOf="@+id/idCardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/generalAffairsMainHeader">
+        app:layout_constraintTop_toBottomOf="@id/idNetworkSecurityMainHeader">
 
 
         <Button
-            android:id="@+id/chatRoomButton"
+            android:id="@+id/idChatRoomBtn1"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:background="@drawable/main_btn_bg"
             android:text="@string/chat_room"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@id/operatorsButton"
-            app:layout_constraintEnd_toStartOf="@id/schedulesButton"
+            app:layout_constraintBottom_toTopOf="@id/idOperatorsBtn1"
+            app:layout_constraintEnd_toStartOf="@id/idSchedulesBtn1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/schedulesButton"
+            android:id="@+id/idSchedulesBtn1"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_stroke"
+            android:background="@drawable/main_btn_bg"
             android:text="@string/schedules"
             android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/idCloudFilesButton1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/chatRoomButton"
+            app:layout_constraintStart_toEndOf="@id/idChatRoomBtn1"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/operatorsButton"
+            android:id="@+id/idOperatorsBtn1"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:background="@drawable/main_btn_bg"
@@ -149,19 +149,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/idCloudFilesButton1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/chatRoomButton" />
+            app:layout_constraintTop_toBottomOf="@id/idChatRoomBtn1" />
 
         <Button
             android:id="@+id/idCloudFilesButton1"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_stroke"
+            android:background="@drawable/main_btn_bg"
             android:text="@string/cloud_files"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/operatorsButton"
-            app:layout_constraintTop_toBottomOf="@id/schedulesButton" />
+            app:layout_constraintStart_toEndOf="@id/idOperatorsBtn1"
+            app:layout_constraintTop_toBottomOf="@id/idSchedulesBtn1" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

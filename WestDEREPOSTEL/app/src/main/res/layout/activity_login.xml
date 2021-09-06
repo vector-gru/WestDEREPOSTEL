@@ -13,6 +13,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/googlesans_bold"
         android:text="@string/login"
+        android:background="@drawable/stroke_bg"
         android:textColor="@color/myTheme1"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -45,10 +46,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="false"
-            android:background="@drawable/main_btn_bg"
             android:fontFamily="@font/googlesans_bold"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
+            android:outlineProvider="bounds"
+            android:elevation="20dp"
             android:text="@string/nnew"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -101,12 +103,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:layout_marginBottom="24dp"
+                    android:layout_marginBottom="6dp"
                     android:drawableStart="@drawable/ic_baseline_lock_24"
                     android:drawablePadding="6dp"
                     android:hint="@string/personal_code_here"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idGivenCodeLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="6dp"
+                    android:hint="@string/enter_secret_code_here"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -114,7 +135,7 @@
         android:id="@+id/btnLoginValidate"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/main_btn_bg"
+        android:background="@drawable/btn_stroke"
         android:fontFamily="@font/googlesans_bold"
         android:text="@string/login"
         android:textColor="@color/black"
@@ -122,6 +143,5 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintStart_toStartOf="@+id/cardView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

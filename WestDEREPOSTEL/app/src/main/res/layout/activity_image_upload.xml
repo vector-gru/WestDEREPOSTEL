@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Cloud Storage"
+        android:text="@string/select_image"
         android:textColor="@color/black"
         android:textSize="26sp" />
 
@@ -37,15 +37,17 @@
         android:id="@+id/idSelectImageBtn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:textColor="@color/black"
         android:layout_marginBottom="32dp"
-        android:text="Select Image"
+        android:text="@string/select_image"
         android:textSize="24sp"/>
 
     <Button
         android:id="@+id/idUploadImageBtn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Upload Image"
+        android:textColor="@color/black"
+        android:text="@string/upload_imagee"
         android:textSize="24sp"/>
 
 </LinearLayout>

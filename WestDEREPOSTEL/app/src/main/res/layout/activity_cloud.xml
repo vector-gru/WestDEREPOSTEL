@@ -21,18 +21,20 @@
         android:id="@+id/idFetchFilesBtn"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Fetch Files"
-        android:textSize="18sp"
         android:layout_below="@id/idCloudToolbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="@string/fetch_files"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/idSelectFileBtn"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Select File"
+        android:text="@string/select_file"
         android:textSize="18sp"
+        android:textColor="@color/black"
         android:layout_below="@id/idFetchFilesBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"/>
@@ -41,20 +43,21 @@
         android:id="@+id/idNotificationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No text is selected"
-        android:textSize="20sp"
         android:layout_below="@id/idSelectFileBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:text="@string/no_file_is_selected_yet"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/idUploadBtn"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Upload"
-        android:textSize="18sp"
         android:layout_below="@id/idNotificationTextView"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="150dp"
+        android:text="@string/upload"
+        android:textSize="18sp" />
 
 </RelativeLayout>

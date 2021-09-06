@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DBF5F8"
-    tools:context=".AddOperatorActivity">
+    tools:context=".operators1.AddOperatorActivity1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,18 +20,18 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/idSelectPhotoAddOperatorBtn"
+            android:id="@+id/idSelectPhotoAddOperatorBtn1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/register_image_btn_bg"
             android:text="Image"
-            app:layout_constraintBottom_toBottomOf="@+id/idSelectPhotoAddOperatorImageView"
-            app:layout_constraintEnd_toEndOf="@+id/idSelectPhotoAddOperatorImageView"
-            app:layout_constraintStart_toStartOf="@+id/idSelectPhotoAddOperatorImageView"
-            app:layout_constraintTop_toTopOf="@+id/idSelectPhotoAddOperatorImageView" />
+            app:layout_constraintBottom_toBottomOf="@id/idSelectPhotoAddOperatorImageView1"
+            app:layout_constraintEnd_toEndOf="@id/idSelectPhotoAddOperatorImageView1"
+            app:layout_constraintStart_toStartOf="@id/idSelectPhotoAddOperatorImageView1"
+            app:layout_constraintTop_toTopOf="@id/idSelectPhotoAddOperatorImageView1" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/idSelectPhotoAddOperatorImageView"
+            android:id="@+id/idSelectPhotoAddOperatorImageView1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="8dp"
@@ -39,11 +39,11 @@
             app:civ_border_width="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idImageView" />
+            app:layout_constraintTop_toBottomOf="@id/idImageView" />
 
 
         <TextView
-            android:id="@+id/idNewOperatorHeader"
+            android:id="@+id/idNewOperatorHeader1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
@@ -56,7 +56,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/idOperatorNameEditText"
+            android:id="@+id/idOperatorNameEditText1"
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
@@ -65,10 +65,10 @@
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idSelectPhotoAddOperatorImageView" />
+            app:layout_constraintTop_toBottomOf="@id/idSelectPhotoAddOperatorImageView1" />
 
         <EditText
-            android:id="@+id/idOperatorEmailEditText"
+            android:id="@+id/idOperatorEmailEditText1"
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -79,10 +79,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idOperatorNameEditText" />
+            app:layout_constraintTop_toBottomOf="@id/idOperatorNameEditText1" />
 
         <EditText
-            android:id="@+id/idOperatorPhoneEditText"
+            android:id="@+id/idOperatorPhoneEditText1"
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -92,12 +92,12 @@
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idOperatorEmailEditText" />
+            app:layout_constraintTop_toBottomOf="@id/idOperatorEmailEditText1" />
 
 
 
         <EditText
-            android:id="@+id/idActivityEditText"
+            android:id="@+id/idActivityEditText1"
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -106,10 +106,10 @@
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idOperatorPhoneEditText" />
+            app:layout_constraintTop_toBottomOf="@id/idOperatorPhoneEditText1" />
 
         <EditText
-            android:id="@+id/idLocationEditText"
+            android:id="@+id/idLocationEditText1"
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -118,10 +118,10 @@
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idActivityEditText" />
+            app:layout_constraintTop_toBottomOf="@id/idActivityEditText1" />
 
         <EditText
-            android:id="@+id/idAccessCodeEditText"
+            android:id="@+id/idAccessCodeEditText1"
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -131,19 +131,20 @@
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idLocationEditText" />
+            app:layout_constraintTop_toBottomOf="@id/idLocationEditText1" />
 
         <Button
-            android:id="@+id/idSaveOperatorBtn"
+            android:id="@+id/idSaveOperatorBtn1"
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="690dp"
+            android:layout_marginTop="708dp"
             android:background="@drawable/main_btn_bg"
             android:text="@string/save"
-            android:textColor="@color/black"
             android:textSize="20sp"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -153,10 +154,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:text="@string/add_logo"
-            app:layout_constraintBottom_toBottomOf="@+id/idSelectPhotoAddOperatorImageView"
-            app:layout_constraintEnd_toStartOf="@+id/idSelectPhotoAddOperatorImageView"
+            app:layout_constraintBottom_toBottomOf="@id/idSelectPhotoAddOperatorImageView1"
+            app:layout_constraintEnd_toStartOf="@id/idSelectPhotoAddOperatorImageView1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/idSelectPhotoAddOperatorImageView" />
+            app:layout_constraintTop_toTopOf="@id/idSelectPhotoAddOperatorImageView1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

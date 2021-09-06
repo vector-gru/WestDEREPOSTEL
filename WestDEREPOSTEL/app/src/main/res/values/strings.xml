@@ -36,7 +36,7 @@
     <string name="regional_brigade">Regional Brigade</string>
     <string name="peace_work_fatherland">Peace Work  Fatherland</string>
     <string name="nnew">New?</string>
-    <string name="email" translatable="false">email</string>
+    <string name="email">email</string>
     <string name="personal_code_here">password here...</string>
     <string name="registration">Registration</string>
     <string name="username">username</string>
@@ -64,7 +64,35 @@
     <string name="check_in">Check In</string>
     <string name="messaging">messaging</string>
     <string name="name_of_operator">Name of Operator</string>
-    <string name="welcome_text">Welcome to our platform. Together Let us make our city a better place.</string>
+    <string name="welcome_text">Welcome to our platform. Together Let us make our Region a better place.</string>
+    <string name="add_operator">Add Operator</string>
+    <string name="save">Save</string>
+    <string name="add_logo">Add Logo</string>
+    <string name="access_code">Access Code</string>
+    <string name="location">Location</string>
+    <string name="activity">Activity</string>
+    <string name="phone">Phone</string>
+    <string name="email1">Email</string>
+    <string name="name">Name</string>
+    <string name="new_operator">New Operator</string>
+    <string name="home">Home</string>
+    <string name="proud_of_bafoussam">Proud of Bafoussam</string>
+    <string name="enter_secret_code_here">Enter secret code</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="schedules_and_to_do">Schedules and To Do</string>
+    <string name="add_an_item">Add an Item</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="clear">Clear</string>
+    <string name="my_to_do_list">My To Do List</string>
+    <string name="meeting_schedules">Meeting Schedules</string>
+    <string name="select_image">Select Image</string>
+    <string name="upload_imagee">Upload Image</string>
+    <string name="upload">Upload</string>
+    <string name="show_all">Show All</string>
+    <string name="select_file">Select File</string>
+    <string name="no_file_is_selected_yet">No file is selected yet</string>
+    <string name="fetch_files">Fetch Files</string>
 
 
 </resources>

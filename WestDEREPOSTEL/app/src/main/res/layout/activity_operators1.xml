@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".OperatorsActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".operators1.OperatorsActivity1">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/idOperatorsToolbar"
+        android:id="@+id/idOperators1Toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -19,7 +19,7 @@
         app:title="Available Operators" />
 
     <Button
-        android:id="@+id/idAddOperatorsBtn"
+        android:id="@+id/idAddOperatorsBtn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_operator"
@@ -33,7 +33,7 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/idOperatorsList"
+            android:id="@+id/idOperatorsList1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="16dp"

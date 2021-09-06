@@ -6,11 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.westderepostel.cloudsave1.Cloud1MainActivity
 import com.example.westderepostel.databinding.ActivityNetworkSecurityBinding
 import com.example.westderepostel.models.User
+import com.example.westderepostel.operators1.OperatorsActivity1
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_general_affairs.*
 import kotlinx.android.synthetic.main.activity_network_security.*
-import kotlinx.android.synthetic.main.activity_network_security.idCloudFilesButton1
 
 class NetworkSecurityActivity : AppCompatActivity() {
 
@@ -43,8 +44,20 @@ class NetworkSecurityActivity : AppCompatActivity() {
 
         }
 
+        idChatRoomBtn1.setOnClickListener {
+            startActivity(Intent(this, ChatroomActivity::class.java))
+        }
+
         idCloudFilesButton1.setOnClickListener {
             startActivity(Intent(this, Cloud1MainActivity::class.java))
+        }
+
+        idOperatorsBtn1.setOnClickListener {
+            startActivity(Intent(this, OperatorsActivity1::class.java))
+        }
+
+        idSchedulesBtn1.setOnClickListener {
+            startActivity(Intent(this, ScheduleActivity::class.java))
         }
 
     }

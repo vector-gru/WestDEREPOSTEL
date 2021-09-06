@@ -8,11 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="myTheme">#FDA09A</color>
-    <color name="myTheme1">#00BCD4</color>
+    <color name="myTheme1">#98F4FF</color>
     <color name="gray">#CFCFCF</color>
     <color name="lightPurple">#FF9E9E</color>
     <color name="blue">#009CAF</color>
 
     <color name="colorPrimary">#3A1A31</color>
     <color name="colorPrimaryDark">#9C72A0</color>
+
+
+    <!--<color name="myTheme1">#00BCD4</color>-->
+
 </resources>

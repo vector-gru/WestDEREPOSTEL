@@ -15,7 +15,7 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
-        app:title="Meeting Schedules"
+        app:title="@string/meeting_schedules"
         app:titleMarginStart="15dp" />
 
     <TextView
@@ -25,16 +25,16 @@
         android:layout_below="@id/idScheduleToolbar"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Schedules and To Do"
+        android:text="@string/schedules_and_to_do"
         android:textColor="@color/black"
-        android:textSize="26dp" />
+        android:textSize="26sp" />
 
     <EditText
         android:id="@+id/idScheduleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
-        android:hint="Add an Item"
+        android:hint="@string/add_an_item"
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/gray" />
@@ -51,18 +51,21 @@
             android:id="@+id/idAddBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add"/>
+            android:textColor="@color/black"
+            android:text="@string/add"/>
         <Button
             android:id="@+id/idDeleteBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"
+            android:text="@string/delete"
+            android:textColor="@color/black"
             android:layout_marginLeft="30dp"/>
         <Button
             android:id="@+id/idClearBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clear"
+            android:text="@string/clear"
+            android:textColor="@color/black"
             android:layout_marginLeft="30dp"/>
     </LinearLayout>
 
@@ -73,8 +76,8 @@
         android:gravity="center"
         android:padding="10dp"
         android:layout_below="@id/idLinearLayout1"
-        android:text="My To Do List"
-        android:textSize="20dp"
+        android:text="@string/my_to_do_list"
+        android:textSize="20sp"
         android:textColor="@color/black" />
 
     <ListView

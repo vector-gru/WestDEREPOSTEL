@@ -15,8 +15,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_menu_24"
-        app:subtitle="Proud of Bafoussam"
-        app:title="Home"
+        app:subtitle="@string/proud_of_bafoussam"
+        app:title="@string/home"
         app:titleMarginStart="20dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,16 +32,19 @@
             android:id="@+id/homeTitle"
             android:layout_width="210dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/googlesans_bold"
             android:gravity="center_horizontal"
+            android:background="@drawable/stroke_bg"
             android:text="@string/west_regional_delegation_of_post_and_telecommunications"
-            android:textColor="@color/white"
-            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/logoHomeCircular"
+            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.064" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/logoHomeCircular"
@@ -59,13 +62,13 @@
 
         <TextView
             android:id="@+id/cam_motto"
-            android:layout_width="64dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="44dp"
             android:fontFamily="@font/googlesans_bold"
-            android:gravity="center_horizontal"
+            android:gravity="end"
             android:text="@string/peace_work_fatherland"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -74,32 +77,38 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
+    <TextView
         android:id="@+id/contentMainServicesBtn"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/main_btn_bg"
         android:text="@string/services"
+        android:background="@drawable/main_btn_bg"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:gravity="center"
+        android:textSize="18sp"
         android:textStyle="bold"
+        android:outlineProvider="bounds"
+        android:elevation="20dp"
         app:layout_constraintBottom_toTopOf="@id/content_main_oplogin_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contentMainHeader" />
 
 
-    <Button
+    <TextView
         android:id="@+id/content_main_oplogin_btn"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/main_btn_bg"
         android:text="@string/operator_login"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:background="@drawable/main_btn_bg"
+        android:textSize="18sp"
+        android:gravity="center"
         android:textStyle="bold"
+        android:outlineProvider="bounds"
+        android:elevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contentMainServicesBtn" />
@@ -116,9 +125,9 @@
         app:layout_constraintTop_toBottomOf="@+id/content_main_oplogin_btn">
 
         <TextView
+            android:id="@+id/idWelcomeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/main_btn_bg"
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
             android:text="@string/welcome_text"
@@ -132,11 +141,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/main_btn_bg"
         android:text="@string/guide"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:outlineProvider="bounds"
+        android:elevation="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

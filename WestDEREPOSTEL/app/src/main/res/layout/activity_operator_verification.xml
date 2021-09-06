@@ -28,7 +28,8 @@
             android:layout_marginTop="70dp"
             android:layout_marginEnd="8dp"
             android:text="@string/operator_verification"
-            android:textColor="@color/black"
+            android:textColor="#18DDF4"
+            android:background="@drawable/stroke_bg"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -61,15 +62,19 @@
             app:layout_constraintTop_toBottomOf="@id/idOperatorVerificationPassword" />
 
 
-        <Button
+        <TextView
             android:id="@+id/idCheckInOperatorBtn"
-            android:layout_width="360dp"
-            android:layout_height="60dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="350dp"
             android:background="@drawable/main_btn_bg"
+            android:gravity="center"
             android:text="@string/check_in"
+            android:textColor="@color/black"
             android:textSize="20sp"
+            android:outlineProvider="bounds"
+            android:elevation="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

@@ -24,7 +24,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/generalAffairsMainHeader"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/content_main_header_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,14 +32,14 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/idServiceImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/service_image"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="230dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/avatar_profile_picture_vector"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/Circular" />
+            app:shapeAppearanceOverlay="@style/Circular1" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/idProfileImageGenAff"
@@ -64,24 +64,41 @@
             android:fontFamily="cursive"
             android:paddingRight="10dp"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/idServiceImage"
             app:layout_constraintTop_toBottomOf="@id/idProfileImageGenAff" />
 
         <TextView
             android:id="@+id/IdServiceTitle"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
             android:gravity="center_horizontal"
-            android:paddingBottom="10dp"
-            android:text="@string/general_affairs_service"
-            android:textColor="@color/white"
+            android:paddingBottom="5dp"
+            android:text="@string/chief_of_service"
+            android:textColor="#9A8686"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@id/generalAffairsMainHeader"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/idServiceImage"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="@+id/idServiceImage"
             app:layout_constraintTop_toBottomOf="@+id/idServiceImage" />
+
+        <TextView
+            android:id="@+id/IdServiceHeadName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="Mr. xxxxxxxxxxxx"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/IdServiceTitle"
+            app:layout_constraintStart_toStartOf="@id/IdServiceTitle"
+            app:layout_constraintTop_toBottomOf="@id/IdServiceTitle" />
 
 
 
@@ -114,7 +131,7 @@
             android:id="@+id/schedulesButton"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_stroke"
+            android:background="@drawable/main_btn_bg"
             android:text="@string/schedules"
             android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/cloudFilesButton"
@@ -138,7 +155,7 @@
             android:id="@+id/cloudFilesButton"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_stroke"
+            android:background="@drawable/main_btn_bg"
             android:text="@string/cloud_files"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"

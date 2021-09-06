@@ -37,7 +37,36 @@
     <string name="enter_your_accesscode">Entrez votre code d\'accès</string>
     <string name="enter_your_email_here">Entrez votre email ici...</string>
     <string name="check_in">Enregistrement</string>
-    <string name="welcome_text">Bienvenue sur notre plateforme. Ensemble, faisons de notre ville un endroit meilleur.</string>
+    <string name="welcome_text">Bienvenue sur notre plateforme. Ensemble, faisons de notre Région un endroit meilleur.</string>
     <string name="messaging">Messagerie</string>
     <string name="name_of_operator">Nom de l\'opérateur</string>
+    <string name="add_operator">Ajouter un Opérateur</string>
+    <string name="save">Sauvegarder</string>
+    <string name="add_logo">Ajouter un logo</string>
+    <string name="access_code">Code d\'accès</string>
+    <string name="location">Emplacement</string>
+    <string name="activity">Activité</string>
+    <string name="phone">Téléphone</string>
+    <string name="email1">E-mail</string>
+    <string name="name">Nom</string>
+    <string name="new_operator">Nouvel opérateur</string>
+    <string name="home">Accueil</string>
+    <string name="email" translatable="false">e-mail</string>
+    <string name="proud_of_bafoussam">Fier de Bafoussam</string>
+    <string name="enter_secret_code_here">Entrez le code secret</string>
+    <string name="please_wait">S\'il vous plaît, attendez...</string>
+    <string name="schedules_and_to_do">Horaires et tâches</string>
+    <string name="add_an_item">Ajouter un article</string>
+    <string name="delete">Effacer</string>
+    <string name="add">Ajouter</string>
+    <string name="clear">Dégager</string>
+    <string name="my_to_do_list">Ma liste de choses à faire</string>
+    <string name="meeting_schedules">Horaires des réunions</string>
+    <string name="select_image">Sélectionnez une image</string>
+    <string name="upload_imagee">Télécharger une image</string>
+    <string name="upload">Télécharger</string>
+    <string name="show_all">Afficher tout</string>
+    <string name="select_file">Choisir le dossier</string>
+    <string name="no_file_is_selected_yet">Aucun fichier n\'est encore sélectionné</string>
+    <string name="fetch_files">Récupérer des fichiers</string>
 </resources>
