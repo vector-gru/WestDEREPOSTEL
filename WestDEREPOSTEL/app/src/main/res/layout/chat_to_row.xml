@@ -18,6 +18,17 @@
         android:layout_margin="16dp"/>
 
     <TextView
+        android:id="@+id/idYouSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="You"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/idMessageTo"
+        app:layout_constraintEnd_toStartOf="@+id/idUserImageTo"
+        app:layout_constraintStart_toStartOf="@+id/idMessageTo" />
+
+    <TextView
         android:id="@+id/idMessageTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

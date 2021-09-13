@@ -39,11 +39,6 @@ class MainActivity : AppCompatActivity() {
                 rotationYBy(360f)
             }.start()
 
-            logoHomeCircular.animate().apply {
-                duration = 2000
-                rotationXBy(360f)
-            }.start()
-
         }
 
         logoHomeCircular.setOnClickListener {

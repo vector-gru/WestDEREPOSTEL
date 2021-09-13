@@ -28,6 +28,7 @@ class ChatroomActivity : AppCompatActivity(){
     companion object {
         val  TAG = "ChatLog"
         var currentUser: User? = null
+
     }
 
     val adapter = GroupAdapter<GroupieViewHolder>()
@@ -77,18 +78,18 @@ class ChatroomActivity : AppCompatActivity(){
         ref.addChildEventListener(object: ChildEventListener {
 
             override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
-              val chatMessage = snapshot.getValue(ChatMessage::class.java)
+                val chatMessage = snapshot.getValue(ChatMessage::class.java)
 
-                if (chatMessage != null) {
-                    chatMessage.let { Log.d(TAG, it.text) }
+                    if (chatMessage != null) {
+                        Log.d(TAG, chatMessage.text)
 
-                    if (chatMessage.fromId == FirebaseAuth.getInstance().uid) {
-//                        val toUser = intent.getParcelableExtra<com.example.westderepostel.User>(UserInfo)
-                        //val currentUser = currentUser ?: return
-                        adapter.add(ChatToItem(chatMessage.text))
-                    }else {
-                        val currentUser = currentUser ?: return
-                        adapter.add(ChatFromItem(chatMessage.text, currentUser))
+                       if (chatMessage.fromId == FirebaseAuth.getInstance().uid) {
+                          // val toUser = intent.getParcelableExtra<com.example.westderepostel.models.User>(UserInfo)
+                           //adapter.add(ChatFromItem(chatMessage.text, currentUser))
+                           adapter.add(ChatToItem(chatMessage.text))
+                       }else {
+                           val currentUser = currentUser ?: return
+                           adapter.add(ChatFromItem(chatMessage.text, currentUser))
                     }
 
                 }
@@ -124,7 +125,7 @@ class ChatroomActivity : AppCompatActivity(){
 
         val reference = FirebaseDatabase.getInstance().getReference("/messages").push()
 
-        val chatMessage = ChatMessage(reference.key!!, text, fromId, System.currentTimeMillis() / 1000 )
+        val chatMessage = ChatMessage(reference.key!!, text, fromId,  System.currentTimeMillis() / 1000 )
         reference.setValue(chatMessage)
             .addOnSuccessListener {
                 Log.d(TAG, "Saved our chat message: ${reference.key}")
@@ -140,9 +141,14 @@ class ChatroomActivity : AppCompatActivity(){
     }
 
 }
+//Load received messages into the chat room
 class ChatFromItem(val text: String, val user: User): Item<GroupieViewHolder>() {
     override fun bind(groupieViewHolder: GroupieViewHolder, position: Int) {
         groupieViewHolder.itemView.idMessageFrom.text = text
+
+        val name = user.username
+        groupieViewHolder.itemView.idSenderName.text = name
+
 
         val uri = user.profileImageUrl
         val targetImageView = groupieViewHolder.itemView.idUserImageFrom
@@ -161,7 +167,7 @@ class ChatToItem(val text: String): Item<GroupieViewHolder>() {
         groupieViewHolder.itemView.idMessageTo.text = text
 
         //load our user image into the imageView of the chatmessage bubble..
-      /*  val uri = user.profileImageUrl
+        /*val uri = user.profileImageUrl
         val targetImageView = groupieViewHolder.itemView.idUserImageTo
         Picasso.get().load(uri).into(targetImageView)*/
     }

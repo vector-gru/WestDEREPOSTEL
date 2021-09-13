@@ -20,6 +20,12 @@
         android:theme="@style/Theme.WestDEREPOSTEL"
         tools:targetApi="lollipop">
         <activity
+            android:name=".BrigadeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FollowUpActivity"
+            android:exported="true" />
+        <activity
             android:name=".todolistapp.TodoMainActivity"
             android:exported="true" />
         <activity
@@ -75,6 +81,7 @@
         <activity android:name=".cloudsave.ShowActivity" />
         <activity android:name=".cloudsave.CloudMainActivity" />
         <activity android:name=".NetworkSecurityActivity" />
+        <activity android:name=".ElectronicCommunicationActivity" />
     </application>
 
 </manifest>

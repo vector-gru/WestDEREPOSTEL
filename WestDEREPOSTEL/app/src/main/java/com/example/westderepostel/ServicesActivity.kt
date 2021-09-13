@@ -36,6 +36,18 @@ class ServicesActivity : AppCompatActivity(){
             startActivity(Intent(this, NetworkSecurityActivity::class.java))
         }
 
+        idElectronicCommunicationsBtn.setOnClickListener {
+            startActivity(Intent(this,ElectronicCommunicationActivity::class.java))
+        }
+
+        idFollowUpBtn.setOnClickListener{
+            startActivity(Intent(this, FollowUpActivity::class.java))
+        }
+
+        idBrigadeBtn.setOnClickListener{
+            startActivity(Intent(this, BrigadeActivity::class.java))
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

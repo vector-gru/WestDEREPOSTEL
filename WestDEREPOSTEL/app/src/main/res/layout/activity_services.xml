@@ -138,6 +138,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/idElectronicCommunicationsBtn"
             android:layout_width="155dp"
             android:layout_height="170dp"
             app:cardCornerRadius="12dp"
@@ -172,6 +173,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/idFollowUpBtn"
             android:layout_width="155dp"
             android:layout_height="170dp"
             app:cardCornerRadius="12dp"
@@ -206,6 +208,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/idBrigadeBtn"
             android:layout_width="155dp"
             android:layout_height="170dp"
             app:cardCornerRadius="12dp"

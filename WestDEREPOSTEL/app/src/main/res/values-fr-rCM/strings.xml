@@ -69,4 +69,6 @@
     <string name="select_file">Choisir le dossier</string>
     <string name="no_file_is_selected_yet">Aucun fichier n\'est encore sélectionné</string>
     <string name="fetch_files">Récupérer des fichiers</string>
+    <string name="send">Envoyer</string>
+    <string name="type_message">Tapez le message...</string>
 </resources>
