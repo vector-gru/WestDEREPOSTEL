@@ -7,8 +7,14 @@
     android:id="@+id/drawerLayout"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <include
         layout="@layout/content_main"/>
+
+    </ScrollView>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_menu"
@@ -17,6 +23,9 @@
         app:headerLayout="@layout/nav_drawer_header"
         app:menu="@menu/nav_drawer_menu"
         android:layout_gravity="start"/>
+
+
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

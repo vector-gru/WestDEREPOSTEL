@@ -8,9 +8,9 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/idDelegateImage"
-        android:layout_width="350dp"
-        android:layout_height="320dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
         android:src="@drawable/the_delegate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -18,11 +18,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/RoundedSquare"
         app:strokeColor="@color/myTheme1"
-        app:strokeWidth="5dp"/>
+        app:strokeWidth="5dp" />
 
     <TextView
         android:id="@+id/idDelegateTitleText"
-        android:layout_width="330dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="@string/the_delegate"
@@ -31,34 +31,54 @@
         android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="@id/idDelegateImage"
         app:layout_constraintStart_toStartOf="@id/idDelegateImage"
-        app:layout_constraintTop_toBottomOf="@id/idDelegateImage" />
+        app:layout_constraintTop_toBottomOf="@id/idDelegateImage"
+        app:layout_constraintBottom_toTopOf="@id/idDelegateNameText"/>
 
     <TextView
         android:id="@+id/idDelegateNameText"
-        android:layout_width="330dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
         android:text="@string/mr_fuafung_johnson"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:fontFamily="cursive"
         android:textStyle="bold"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="@id/idDelegateTitleText"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@id/idDelegateTitleText"
         app:layout_constraintTop_toBottomOf="@id/idDelegateTitleText" />
 
     <TextView
-        android:id="@+id/idDelegateText"
-        android:layout_width="350dp"
+        android:id="@+id/idDelegateTopicText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="MONTHLY MESSAGE"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/idDelegateTitleText"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@id/idDelegateTitleText"
+        app:layout_constraintTop_toBottomOf="@id/idDelegateNameText" />
+
+    <TextView
+        android:id="@+id/idDelegateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textIsSelectable="true"
+        android:background="@drawable/btn_stroke"
+        android:justificationMode="inter_word"
         android:text="@string/words_of_the_delegate"
         android:textSize="20sp"
-        android:gravity="center"
-        android:justificationMode="inter_word"
-        app:layout_constraintEnd_toEndOf="@+id/idDelegateNameText"
-        app:layout_constraintStart_toStartOf="@+id/idDelegateNameText"
-        app:layout_constraintTop_toBottomOf="@id/idDelegateNameText" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

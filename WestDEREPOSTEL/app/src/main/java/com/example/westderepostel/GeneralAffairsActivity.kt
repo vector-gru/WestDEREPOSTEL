@@ -6,6 +6,7 @@ import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import com.example.westderepostel.databinding.ActivityGeneralAffairsBinding
 import com.example.westderepostel.models.User
+import com.example.westderepostel.todolistapp.TodoMainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
@@ -54,7 +55,7 @@ class GeneralAffairsActivity : AppCompatActivity(){
         }
 
         schedulesButton.setOnClickListener {
-            startActivity(Intent(this, ScheduleActivity::class.java))
+            startActivity(Intent(this, TodoMainActivity::class.java))
         }
 
         cloudFilesButton.setOnClickListener {

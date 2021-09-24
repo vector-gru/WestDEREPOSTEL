@@ -46,7 +46,6 @@ class OperatorsActivity : AppCompatActivity(){
     private fun getOperatorData() {
 
         dbref = FirebaseDatabase.getInstance().getReference("operators")
-
         dbref.addValueEventListener(object : ValueEventListener {
 
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -63,15 +62,13 @@ class OperatorsActivity : AppCompatActivity(){
 
                     operatorRecyclerview.adapter = MyOAdapter(operatorArrayList)
 
-
                 }
 
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
 
+            }
 
         })
 
