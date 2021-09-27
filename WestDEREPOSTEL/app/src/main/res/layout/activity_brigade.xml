@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -32,8 +33,10 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/idServiceImage"
-            android:layout_width="230dp"
-            android:layout_height="150dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintWidth_percent="0.7"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/mr_kenou"
@@ -56,9 +59,9 @@
 
         <TextView
             android:id="@+id/idProfileName4"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="5dp"
             android:fontFamily="cursive"
@@ -76,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
+            android:paddingBottom="1dp"
             android:text="@string/chief_of_service"
             android:textColor="#9A8686"
             android:textSize="20sp"
@@ -91,8 +94,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
-            android:text="Mr. Kenou Zacharie"
+            android:paddingBottom="1dp"
+            android:text="Mr. KENOU Zacharie"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -100,114 +103,133 @@
             app:layout_constraintStart_toStartOf="@id/IdServiceTitle"
             app:layout_constraintTop_toBottomOf="@id/IdServiceTitle" />
 
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/encloseButtons"
+    <ScrollView
+        android:id="@+id/idScrollView"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toTopOf="@id/idCardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/idBrigadeMainHeader">
-
-
-        <Button
-            android:id="@+id/idChatRoomBtn4"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/main_btn_bg"
-            android:text="@string/chat_room"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@id/idOperatorsBtn4"
-            app:layout_constraintEnd_toStartOf="@id/idSchedulesBtn4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/idSchedulesBtn4"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/main_btn_bg"
-            android:text="@string/schedules"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@id/idCloudFilesButton4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/idChatRoomBtn4"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/idOperatorsBtn4"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/main_btn_bg"
-            android:text="@string/operators"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/idCloudFilesButton4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/idChatRoomBtn4" />
-
-        <Button
-            android:id="@+id/idCloudFilesButton4"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/main_btn_bg"
-            android:text="@string/cloud_files"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/idOperatorsBtn4"
-            app:layout_constraintTop_toBottomOf="@id/idSchedulesBtn4" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/idCardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        app:cardCornerRadius="1dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/idBrigadeMainHeader"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/encloseButtons">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/encloseButtons"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp" >
 
-            <TextView
-                android:id="@+id/idNewsTitle"
-                android:layout_width="match_parent"
+
+            <Button
+                android:id="@+id/idChatRoomBtn4"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:background="@drawable/btn_stroke"
-                android:gravity="center_horizontal"
-                android:text="@string/news_in_the_ministry"
-                android:textAllCaps="false"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/chat_room"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                app:layout_constraintBottom_toTopOf="@id/idOperatorsBtn4"
+                app:layout_constraintEnd_toStartOf="@id/idSchedulesBtn4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/idNewsDesc"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/idSchedulesBtn4"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/idNewsTitle"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
-                android:background="@drawable/btn_stroke"
-                android:justificationMode="inter_word"
-                android:padding="15dp"
-                android:text="@string/newsDetails"
-                android:textSize="16sp" />
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/schedules"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@id/idCloudFilesButton4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/idChatRoomBtn4"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </RelativeLayout>
+            <Button
+                android:id="@+id/idOperatorsBtn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/operators"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@id/idCardView"
+                app:layout_constraintEnd_toStartOf="@id/idCloudFilesButton4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/idChatRoomBtn4" />
+
+            <Button
+                android:id="@+id/idCloudFilesButton4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/main_btn_bg"
+                android:text="@string/cloud_files"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@id/idCardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/idOperatorsBtn4"
+                app:layout_constraintTop_toBottomOf="@id/idSchedulesBtn4" />
 
 
-    </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/idCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/idNewsTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/btn_stroke"
+                            android:gravity="center_horizontal"
+                            android:text="@string/news_in_the_ministry"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/idNewsDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/idNewsTitle"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/btn_stroke"
+                            android:justificationMode="inter_word"
+                            android:padding="15dp"
+                            android:text="@string/newsDetails"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
